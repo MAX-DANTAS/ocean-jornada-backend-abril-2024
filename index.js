@@ -14,4 +14,11 @@ app.get('/oi', function (req, res) {
 
   })
 
+// lista de intens
+  const lista =['Rick Sanchez', 'Morty Smith', 'Summer Smith']
+
+  // Endpoint Read ALL --> [GET] / item
+  app.get('/item', function (req, res) {
+    res.send(lista)
+  })
 app.listen(3000)
